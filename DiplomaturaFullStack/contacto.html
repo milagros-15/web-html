@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Contacto</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: rgb(176, 142, 142);
+        height: 100vh;
+         }
+      form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-49%, -49%);
+        
+      }
+    </style>
+    <form>
+      <fieldset>
+      <legend><b>Contacto</b></legend>
+     <form  enctype="multipart/form-data" id="form_contact" name="form_contact">
+       <div class="form-row">
+         <div class="col-md-4 mb-3">
+           <label for="Name">Nombre</label>
+          <input type="text" class="form-control" id="Name" placeholder="nombre" name="Name" />
+         </div>
+       </div>
+       <div class="form-row">
+         <div class="col-md-4 mb-3">
+           <p><label for="validationCustom01">Apellido</label>
+           <input type="text" class="form-control" id="validationCustom01" placeholder="apellido" value="" required name="apellido"></p>
+         </div>
+       </div>
+       <div>
+        <label for="telefono">Teléfono</label>
+        <input type="number" placeholder="teléfono" />
+      </div>
+      <div>
+        <p></p><label for="provincia">Provincia</label>
+        <input type="text" class="form-control" placeholder="provincia" value="" required name="provincia"></p>
+      </div>
+       <div class="form-row">
+         <div class="col-md-4 mb-3">
+           <p><label for="exampleFormControlInput1">Correo Electrónico</label>
+             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@gmail.com" name="correo"></p>
+         </div>
+       </div>
+       <div class="form-row">
+         <div class="col-md-4 mb-3">
+            <label for="exampleFormControlTextarea1">Mensaje</label>
+             <textarea class="form-control" name="consulta"></textarea>
+         </div>
+       </div>
+      </fieldset>
+      <button>Enviar</button> 
+      <input type="button" onclick="history.back()" name="Volver atrás" value="Volver atrás">     
+    </form>
+   </body>
+  </html>
+ 
+
+
+ 
+
+
+
+
+
+
